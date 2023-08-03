@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>home page</title>
+{% endblock %}
+
+{% block content %}
+    <h2 style="text-align: center;">ข้อมูลประชากรทั้งหมด</h2>
+    <table class="table table-info table-striped">
+        <thead>
+          <tr>
+            <th scope="col">รหัสประชากร</th>
+            <th scope="col">ชื่อประชากร</th>
+            <th scope="col">อายุ</th>
+            <th scope="col">แก้ไข</th>
+            <th scope="col">ลบ</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for person in all_person %}
+          <tr>
+            <th scope="row">{{person.id}}</th>
+            <td>{{person.name}}</td>
+            <td>{{person.age}}</td>
+            <td><a href="#" class="btn">แก้ไข</a></td>
+            <td><a href="#" class="btn">ลบ</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+{% endblock %}
