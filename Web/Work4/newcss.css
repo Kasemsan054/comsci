@@ -1,0 +1,22 @@
+#myHeader {
+    background-color: blue;
+    color: white;
+}
+div {
+    border-style: dotted;
+    padding: 25px;
+}
+h2 {
+    color: #8A2BE2;
+}
+#myp1 {
+    font-size: 20px;
+    color: darkcyan;
+}
+#mayp2 {
+    background-color: bisque;
+}
+#myp3 {
+    border-style: groove;
+    background-color: darkorange;
+}
